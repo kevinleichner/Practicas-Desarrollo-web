@@ -1,0 +1,160 @@
+* {
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background: #000 url(imagenes/fondo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.contenedor	{
+	margin: auto;
+	width: 90%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+}
+
+header 	{
+	width: 100%;
+	padding: 50px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+header .menu a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 40px;
+	font-size: 18px;
+}
+
+header .menu a:hover {
+	text-decoration: underline;
+}
+
+.main {
+	background: #fff;
+	padding: 20px;
+	width: 70%;
+}
+
+.main article .thumb {
+	margin-bottom: 20px;
+}
+
+.main article .thumb img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.main article h2 {
+	margin-bottom: 20px;
+	font-weight: normal;
+	font-size: 32px;
+}
+
+.main article p {
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 27px;
+}
+
+aside {
+	width: 30%;
+	background: #537dca;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+aside .ad {
+	background: #4264a2; 
+	color:#fff;
+	padding: 50px 0;
+	margin: 20px;
+	text-align: center;
+	font-size: 30px;
+}
+
+footer {
+	background: rgb(255,255,255, 0.2);
+	padding: 10px;
+	display: flex;
+	color: #fff;
+	width: 100%;
+	padding:20px;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+footer .redes-sociales a {
+	color: #fff;
+	margin-left: 20px; 
+	text-decoration: underline;
+}
+
+footer .redes-sociales a:hover {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+	.main {
+		width: 100%;
+	}
+
+	aside {
+		flex-direction: row;
+		width: 100%;
+	}
+
+	aside .ad {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+
+	header .menu {
+		background: rgb(255,255,255, .2);
+		padding: 20px;
+		width: 100%;
+		text-align: center;
+	}
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+
+	footer {
+		flex-direction: column-reverse;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	footer .redes-sociales {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	aside {
+		display: none;
+	}
+}
